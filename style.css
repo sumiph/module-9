@@ -1,3 +1,45 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Work Sans', sans-serif;
+}
+header{
+    background-color: antiquewhite;
+    padding: 50px 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+}
+nav > ul{
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+}
+nav li a{
+text-decoration: none;
+color: rgb(22, 21, 21);
+}
+/*bammer styles*/
+.banner-contend{
+width: 800px;
+text-align: center;
+margin: 0 auto;
+}
+.banner-title{
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(46, 38, 38);
+}
+.banner-description{
+    color: rgb(116, 87, 45);
 }
