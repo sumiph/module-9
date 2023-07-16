@@ -1,24 +1,26 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif; 
 }
 header{
-    background-color: antiquewhite;
-    padding: 50px 100px;
+   background-color: antiquewhite;
+   padding: 50px;
+   max-width: 100%;
 }
 nav{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .nav-title{
-    font-size: 2em;
-    font-weight: 700;
     color: black;
+    margin-left: 10%;
 }
 nav > ul{
     display: flex;
+    width: 90vh;
+    margin-left: 50%;
 }
 nav ul li {
     list-style: none;
@@ -31,7 +33,7 @@ color: rgb(22, 21, 21);
 }
 /*bammer styles*/
 .banner-contend{
-width: 800px;
+width:55%;
 text-align: center;
 margin: 0 auto;
 }
@@ -42,4 +44,76 @@ margin: 0 auto;
 }
 .banner-description{
     color: rgb(116, 87, 45);
+}
+.btn-primary{
+border-radius: 8px;
+background-color:rgb(151, 5, 53) ;
+padding: 20px 30px;
+color: azure;
+border: none;
+font-size: 1.25em;
+cursor:pointer ;  
+}
+.img-banner{
+    width:80% ;
+    padding: 20px;
+    margin-left:20vh;
+}
+/*      end header      */
+.quick-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.quick-list-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   padding: 50px;
+   gap: 20px;
+}
+.quick-list-img img{
+    height: 100%;
+    border-radius: 20px;
+}
+.quick-list-text{
+    padding: 10%;
+    margin-top: 40%;
+}
+.style-text{
+    font-size: 7vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+span1{
+    opacity: 50%;
+}
+span2{
+    color: rgb(151, 5, 53);
+}
+.quick-peragrap{
+    padding: 15px;
+    margin-bottom:15px;
+}
+
+/*renponsive*/
+@media screen and (max-width:576px) {
+    header{
+        flex-direction: column;
+     }
+     nav{
+          width: 100%;
+        flex-direction: column;
+      }
+      .img-banner{
+        width:90% ;
+        padding: 20px;
+        margin-left: 10px;
+    }
+    .quick-list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .quick-list-img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
 }
