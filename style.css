@@ -89,9 +89,64 @@ span2{
     color: rgb(151, 5, 53);
 }
 .quick-peragrap{
-    padding: 15px;
+    padding: 10px;
     margin-bottom:15px;
 }
+/* main part*/
+.featurs{
+    position: absolute;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.featurs-text{
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 0;
+}
+.feature-peragrph{
+    margin-top: 0;
+    padding: 20px;
+    margin-left: 10%;
+}
+.box{
+    height: 11%;
+    max-width: 80%;
+    box-shadow: 5px 5px 10px gray;
+   margin-bottom: 7%;
+   margin-left: 12%;
+   padding-left: 30px;
+   padding-top: 35px;
+}
+.featurs-box{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 66%;
+}
+.featurs-box button{
+    height: 100px;
+    width: 250px;
+    padding: 20px;
+    font-weight: bold;
+    color: azure;
+    background-color: rgb(180, 53, 96);
+    border: none;
+}
+span3{
+    font-size: 30px;
+}
+/*end*/
+
+
+
+
+
+
+
+
+
 
 /*renponsive*/
 @media screen and (max-width:576px) {
@@ -115,5 +170,9 @@ span2{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-
+    .featurs{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
 }
